@@ -1,8 +1,13 @@
 package com.deniszacharov;
 
+/*
+ Создать 2-мерный массив (матрица) M*N и заполнить его случайными числами.
+  Отсортировать числа по возрастанию, чтобы с левом верхнем углу было самое маленькое число,
+  справа от него следующее по значению, итд, в правом нижнем углу самое большое.
+ */
+
 import java.util.Arrays;
 import java.util.Random;
-
 public class SortArray {
     int n = 5;
     int m = 5;
@@ -25,7 +30,7 @@ public class SortArray {
             array[i] = random.nextInt(max) + min;
         }
     }
-    
+
     private void sortAndPrintArray() {
         Arrays.sort(array);
         for (int i = 0; i < m; i++) {
